@@ -3,19 +3,20 @@ import React from "react";
 import Home from "./home/Home";
 
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import AllUsers from "./AllUsers";
+import LoginForm from "./LoginForm";
 
 class App extends React.Component {
   render() {
     return (
       <>
-        <h1>Hello</h1>
-        {/* <Router>
-          <Header />
+        <h1>Hello Thunk</h1>
+        <Router>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/login" component={LoginUser} />
+            <Route exact path="/create" component={LoginForm} />
+            <Route path="/all" component={AllUsers} />
           </Switch>
-        </Router> */}
+        </Router>
       </>
     );
   }
